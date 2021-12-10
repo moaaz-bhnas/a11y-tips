@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aria-label</title>
+    <style>
+      .menu-button {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      - sighted user ✔
+      - user who is blind ❌
+     -->
+    <button class="menu-button">&#9776;</button>
+
+    <!-- 
+      - sighted user ✔
+      - user who is blind ✔
+     -->
+    <button class="menu-button" aria-label="toggle menu">&#9776;</button>
+  </body>
+</html>
