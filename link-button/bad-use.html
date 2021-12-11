@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>link vs button | bad use</title>
+    <style>
+      .menu-button {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Example of bad use: 
+      ❌ Don't use link to perform an action that's not navigation-related
+     -->
+    <a href="#" aria-label="toggle sidebar" onclick="toggleSidebar()">☰</a>
+    <a href="#" aria-label="close window" onclick="closeWindow()">X</a>
+  </body>
+</html>
